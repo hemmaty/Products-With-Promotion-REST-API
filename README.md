@@ -7,10 +7,14 @@ This is a simple API for getting product List By Promotion!
 
 Create a database and set access parameters in **.env** file  
 >DB_HOST= **add mysql host name here**  
-DB_PORT=**add mysql port name here** 
-DB_DATABASE= **add mysql database name here** 
-DB_USERNAME=**add mysql database user here** 
-DB_PASSWORD=**add mysql database password here**   
+
+>DB_PORT=**add mysql port name here** 
+
+>DB_DATABASE= **add mysql database name here** 
+
+>DB_USERNAME=**add mysql database user here** 
+
+>DB_PASSWORD=**add mysql database password here**   
 
 # Run  
  
@@ -26,7 +30,10 @@ For Testing
   
  # Get Result 
  >http://localhost:8000/products
+ 
  >http://localhost:8000/products?category=boots
+ 
  >http://localhost:8000/products?priceLessThan=71000
+ 
  >http://localhost:8000/products?priceLessThan=71000&category=boots
 
