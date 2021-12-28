@@ -1,5 +1,5 @@
 
-# Welcome to Products Service  
+# Promotional Products REST API  
   
 This is a simple API for getting product List By Promotion!  
   
