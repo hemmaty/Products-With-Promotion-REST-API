@@ -1,24 +1,32 @@
-# Lumen PHP Framework
 
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![Total Downloads](https://img.shields.io/packagist/dt/laravel/framework)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Stable Version](https://img.shields.io/packagist/v/laravel/framework)](https://packagist.org/packages/laravel/lumen-framework)
-[![License](https://img.shields.io/packagist/l/laravel/framework)](https://packagist.org/packages/laravel/lumen-framework)
+# Welcome to Products Service  
+  
+This is a simple API for getting product List By Promotion!  
+  
+# Configuration  
 
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
+Create a database and set access parameters in **.env** file  
+>DB_HOST= **add mysql host name here**  
+DB_PORT=**add mysql port name here** 
+DB_DATABASE= **add mysql database name here** 
+DB_USERNAME=**add mysql database user here** 
+DB_PASSWORD=**add mysql database password here**   
 
-## Official Documentation
+# Run  
+ 
+ For runing,  you need to run this command
+>sh start.sh 
+  
+  This command run some artisan command to prepare product and also lunch webserver in this host:
+  >localhost:8000
+  
+# Test  
+For Testing 
+> sh test.sh
+  
+ # Get Result 
+ >http://localhost:8000/products
+ >http://localhost:8000/products?category=boots
+ >http://localhost:8000/products?priceLessThan=71000
+ >http://localhost:8000/products?priceLessThan=71000&category=boots
 
-Documentation for the framework can be found on the [Lumen website](https://lumen.laravel.com/docs).
-
-## Contributing
-
-Thank you for considering contributing to Lumen! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Lumen, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
